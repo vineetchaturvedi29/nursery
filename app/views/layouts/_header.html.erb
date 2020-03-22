@@ -1,0 +1,30 @@
+<div class="nav_w3ls">
+	<nav>
+		<label for="drop" class="toggle toogle-2">Menu</label>
+		<input type="checkbox" id="drop" />
+		<ul class="menu">
+			<li class="active ml-0"><a href="/">Home</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#services">Services</a></li>
+			<li>
+				<!-- First Tier Drop Down -->
+				<label for="drop-2" class="toggle toggle-drop">Pages <span class="fa fa-angle-down" aria-hidden="true"></span>
+				</label>
+				<a href="#">Pages <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+				<input type="checkbox" id="drop-2" />
+				<ul class="list-unstyled">
+					<li><a href="#why" class="drop-text">Why Choose Us</a></li>
+					<li class="my-2"><a href="#partners" class="drop-text">Our Partners</a></li>
+					<li><a href="#testi" class="drop-text">Testimonials</a></li>
+				</ul>
+			</li>
+			<li><a href="#blog">Blog</a></li>
+			<li><a href="#gallery">Gallery</a></li>
+			<li class="mr-0"><a href="#contact">Contact Us</a></li>
+			<% if current_user.present? %>
+			<li class="active ml-0"><a href="/">sign out</a></li>
+      <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+     <% end %>
+		</ul>
+	</nav>
+</div>
