@@ -9,7 +9,7 @@ class PlantsController < ApplicationController
 	end
 	
 	def create
-		@plant = Plant.new(name: params["plant"]["name"], price: params["plant"]["price"])
+		@plant = Plant.new(name: params["plant"]["name"], price: params["plant"]["price"], avatar: params["plant"]["avatar"])
 		if @plant.save
 			redirect_to plants_path
 		else
@@ -20,4 +20,5 @@ class PlantsController < ApplicationController
 	def show
 		@plant = Plant.find(params[:id])
 	end
+
 end

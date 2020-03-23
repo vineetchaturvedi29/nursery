@@ -1,5 +1,6 @@
 <%= form_for @plant do |f| %>
 	Name: <%= f.text_field :name %> <br>
 	Price: <%= f.text_field :price %> <br>
+	Image: <%= f.file_field :avatar %><br>
 	<%= f.submit "submit"  %>
 <% end %>

@@ -1,23 +1,6 @@
-<%= link_to "All Plants", plants_path %>
 
 	<div id="home">
-		<!-- header -->
-		<header class="header-style fixed-top">
-			<div class="container">
-				<div class="header d-lg-flex justify-content-between align-items-center">
-					<!-- logo -->
-					<h1 class="logo text-center">
-						<a href="index.html">Plants<i class="fa fa-pagelines" aria-hidden="true"></i>
-						</a>
-					</h1>
-					<!-- //logo -->
-					<!-- nav -->
-					<%= render 'layouts/header'%>
-					
-				</div>
-			</div>
-		</header>
-		<!-- //header -->
+		<%= render 'layouts/header'%>
 
 		<!-- banner -->
 		<div class="banner_w3lspvt">
@@ -97,67 +80,6 @@
 	</div>
 
 	<!-- //main -->
-
-	<%= render 'layouts/about'%>
-
-	<!-- services -->
-	<div class="serives-agile py-5" id="services">
-		<div class="container py-xl-5 py-lg-3">
-			<div class="row support-bottom text-center">
-				<div class="col-md-4 services-w3ls-grid">
-					<i class="fa fa-envira" aria-hidden="true"></i>
-					<h4 class="text-wh text-uppercase mt-md-5 mt-4 mb-3">Garden Care</h4>
-					<p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
-				</div>
-				<div class="col-md-4 services-w3ls-grid my-md-0 my-4">
-					<i class="fa fa-tree" aria-hidden="true"></i>
-					<h4 class="text-wh text-uppercase mt-md-5 mt-4 mb-3">Plant Renovation</h4>
-					<p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
-				</div>
-				<div class="col-md-4 services-w3ls-grid">
-					<i class="fa fa-pagelines" aria-hidden="true"></i>
-					<h4 class="text-wh text-uppercase mt-md-5 mt-4 mb-3">Always Fresh</h4>
-					<p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //services -->
-
-	<!-- blog -->
-	<section class="w3ls-bnrbtm py-5" id="blog">
-		<div class="py-xl-5 py-lg-3">
-			<div class="row no-gutters">
-				<div class="col-xl-5 who-left-w3pvt offset-xl-1 pt-xl-3 pr-xl-0 pr-3">
-					<h3 class="w3ls-title text-da text-center font-weight-bold mb-5 pb-lg4">Latest <span class="font-weight-light">Blog</span></h3>
-					<ul class="timeline">
-						<li>
-							<a href="#why" class="head-text-w3">Iste natus error sit</a>
-							<a href="#why" class="float-right">21 Nov, 2018</a>
-							<p>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-								exercitation ullamco laboris.</p>
-						</li>
-						<li>
-							<a href="#why" class="head-text-w3">Totam rem aperiam</a>
-							<a href="#why" class="float-right">26 Nov, 2018</a>
-							<p>Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-								exercitation ullamco.</p>
-						</li>
-						<li>
-							<a href="#why" class="head-text-w3">Eaque ipsa quae</a>
-							<a href="#why" class="float-right">30 Nov, 2018</a>
-							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-xl-6 mt-xl-0 mt-md-5 mt-4 text-xl-right text-center">
-					<img class="img-fluid rounded" src="/assets/blog.jpg" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- //blog -->
-
 
 	<!-- why -->
 	<section class="blog_w3ls pb-5" id="why">
@@ -311,73 +233,7 @@
 	</section>
 	<!-- //testimonials -->
 
-	<!-- gallery -->
-	<section class="portfolio py-5" id="gallery">
-		<div class="container py-xl-5 py-lg-3">
-			<h3 class="w3ls-title text-center font-weight-bold mb-5">Our <span class="font-weight-light">Plants</span></h3>
-			<div class="row pt-4">
-				<div class="col-md-3 gal-grid-wthree">
-					<div class="gallery-demo">
-						<a href="#gal1">
-							<img src="/assets/g1.jpg" alt=" " class="img-fluid" />
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 gal-grid-wthree my-md-0 my-4">
-					<div class="gallery-demo">
-						<a href="#gal2">
-							<img src="/assets/g2.jpg" alt=" " class="img-fluid" />
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 gal-grid-wthree">
-					<div class="gallery-demo">
-						<a href="#gal3">
-							<img src="/assets/g3.jpg" alt=" " class="img-fluid" />
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 gal-grid-wthree mt-md-0 mt-4">
-					<div class="gallery-demo">
-						<a href="#gal4">
-							<img src="/assets/g4.jpg" alt=" " class="img-fluid" />
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="row mt-4">
-				<div class="col-md-3 gal-grid-wthree">
-					<div class="gallery-demo">
-						<a href="#gal5">
-							<img src="/assets/g5.jpg" alt=" " class="img-fluid" />
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 gal-grid-wthree my-md-0 my-4">
-					<div class="gallery-demo">
-						<a href="#gal6">
-							<img src="/assets/g6.jpg" alt=" " class="img-fluid" />
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 gal-grid-wthree">
-					<div class="gallery-demo">
-						<a href="#gal7">
-							<img src="/assets/g7.jpg" alt=" " class="img-fluid" />
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 gal-grid-wthree mt-md-0 mt-4">
-					<div class="gallery-demo">
-						<a href="#gal8">
-							<img src="/assets/g8.jpg" alt=" " class="img-fluid" />
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- gallery model-->
+
 
 		<!-- popup-->
 	<div id="gal1" class="popup-effect animate">
@@ -453,80 +309,7 @@
 	<!-- //popup -->
 	<!-- //gallery -->
 
-	<!-- contact -->
-	<section class="contact py-5" id="contact">
-		<div class="container py-xl-5 py-lg-3">
-			<h3 class="w3ls-title text-wh text-center font-weight-bold mb-5">Contact <span class="font-weight-light">Us</span></h3>
-			<div class="row contact-form">
-				<div class="offset-lg-2"></div>
-				<div class="col-lg-8 wthree-form-left">
-					<!-- contact form grid -->
-					<fieldset class="contact-top1" data-blast="borderColor">
-						<legend class="text-wh let text-capitalize">send us a note</legend>
-						<form action="#" method="post" class="f-color">
-							<div class="form-group">
-								<label for="contactusername">Name</label>
-								<input type="text" class="form-control" name="name" id="contactusername" required placeholder="Enter your name">
-							</div>
-							<div class="form-group">
-								<label for="contactemail">Email</label>
-								<input type="email" class="form-control" name="email" id="contactemail" required placeholder="Enter your Email">
-							</div>
-							<div class="form-group">
-								<label for="contactcomment">Your Message</label>
-								<textarea class="form-control" rows="5" name="message" id="contactcomment" required placeholder="your message"></textarea>
-							</div>
-							<button type="submit" class="btn btn-block" data-blast="bgColor">Send</button>
-						</form>
-					</fieldset>
-					<!--  //contact form grid ends here -->
-				</div>
-				<div class="offset-lg-2"></div>
-			</div>
-			<!-- contact address -->
-			<div class="row address bg-li">
-				<div class="col-lg-4 address-grid">
-					<div class="row address-info">
-						<div class="col-md-3 col-4 address-left text-lg-center text-sm-right text-center">
-							<i class="fa fa-envelope"></i>
-						</div>
-						<div class="col-md-9 col-8 address-right">
-							<p>
-								<a href="mailto:example@email.com"> mail 1@example.com</a>
-							</p>
-							<p>
-								<a href="mailto:example@email.com"> mail 2@example.com</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 address-grid my-lg-0 my-4">
-					<div class="row address-info">
-						<div class="col-md-3 col-4 address-left text-lg-center text-sm-right text-center">
-							<i class="fa fa-phone"></i>
-						</div>
-						<div class="col-md-9 col-8 address-right">
-							<p>+1 234 567 8901</p>
-							<p>+1 567 567 9876</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 address-grid">
-					<div class="row address-info">
-						<div class="col-md-3 col-4 address-left text-lg-center text-sm-right text-center">
-							<i class="fa fa-map"></i>
-						</div>
-						<div class="col-md-9 col-8 address-right">
-							<p> 786 Main Road, hollies</p>
-							<p> California, USA</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- //contact address -->
-		</div>
-	</section>
-	<!-- //contact -->
+
 
 	<!-- partners -->
 	<section class="partners py-5" id="partners">
@@ -568,78 +351,7 @@
 	</section>
 	<!-- //partners -->
 
-		<!-- footer -->
-	<footer class="text-center py-4">
-		<div class="container py-xl-5 py-4">
-			<h3 class="text-da let mb-3">We Provide Best Services</h3>
-			<p class="footer-para mx-auto">Natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
-				doloremque laudantium, totam rem aperiam</p>
-			<!-- logo -->
-			<h2 class="logo2 text-center mt-3">
-				<a href="index.html">
-					Plants<i class="fa fa-pagelines" aria-hidden="true"></i>
-				</a>
-			</h2>
-			<!-- //logo -->
-			<!-- address -->
-			<div class="contact-left-footer mt-4">
-				<h6 class="text-da let mb-3">Sed do eiusmod tempor incididunt ut labore et dolore</h6>
-				<ul>
-					<li>
-						<p>
-							<i class="fa fa-map-marker mr-2"></i>345 Setwant natrer, USA
-						</p>
-					</li>
-					<li class="mx-4">
-						<p>
-							<i class="fa fa-phone mr-2"></i>+1(401) 1234 567.
-						</p>
-					</li>
-					<li>
-						<p class="text-wh">
-							<i class="fa fa-envelope-open mr-2"></i>
-							<a href="mailto:info@example.com">example@gmail.com</a>
-						</p>
-					</li>
-				</ul>
-			</div>
-			<!-- //address -->
-			<!-- social icons -->
-			<div class="footercopy-social mt-4">
-				<ul>
-					<li>
-						<a href="#">
-							<span class="fa fa-facebook-f"></span>
-						</a>
-					</li>
-					<li class="mx-2">
-						<a href="#">
-							<span class="fa fa-twitter"></span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span class="fa fa-rss"></span>
-						</a>
-					</li>
-					<li class="ml-2">
-						<a href="#">
-							<span class="fa fa-vk"></span>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<!-- //social icons -->
-			<!-- copyright -->
-			<div class="w3l-copy text-center mt-5">
-				<p class="text-da">© 2018 Plants. All rights reserved | Design by
-					<a href="http://w3layouts.com/">W3layouts</a>
-				</p>
-			</div>
-			<!-- //copyright -->
-		</div>
-	</footer>
-	<!-- //footer -->
+  <%= render 'layouts/footer' %>
 
 	<!-- move top icon -->
 	<a href="#home" class="move-top text-center"></a>
