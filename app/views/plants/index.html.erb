@@ -1,0 +1,95 @@
+
+
+<!-- <table border=""> -->
+	<!-- <tr> -->
+		<!-- <th>Name</th> -->
+		<!-- <th>Price</th> -->
+		<!-- <th>View</th> -->
+	<!-- </tr> -->
+	<%# @plants.each do |plant| %>
+		<!-- <tr> -->
+			<!-- <td><%#= plant.name %></td> -->
+			<!-- <td><%#= plant.price %></td>	 -->
+			<!-- <td><%#= link_to "Buy", plant_path(plant) %></td>> -->
+		<!-- </tr> -->
+	<%# end %>
+<!-- </table> -->
+<%#= link_to "New Plant", new_plant_path %>
+<%= render 'layouts/header'%>
+	<!-- gallery -->
+	<section class="portfolio py-5" id="gallery">
+		<div class="container py-xl-5 py-lg-3">
+			<h3 class="w3ls-title text-center font-weight-bold mb-5">Our <span class="font-weight-light">Plants</span></h3>
+			<div class="row pt-4">
+				<% @plants.each do |plant| %>
+					<div class="col-md-3 gal-grid-wthree">
+						<div class="gallery-demo">
+							<a href="/plants/<%=plant.id%>">
+								<h5 align="center"><%=plant.name%></h5>
+								<% if plant.avatar_file_name.nil? %>
+									<img src="/assets/g1.jpg" alt=" " class="img-fluid" />
+								<% else %>
+									<%= image_tag plant.avatar.url(:medium) %>
+								<% end %>
+								<h5 align="center">Price: ₹<em><%= plant.price %></em></h5>
+							</a>
+						</div>
+
+					</div>
+				<% end %>
+				<!-- <div class="col-md-3 gal-grid-wthree my-md-0 my-4">
+					<div class="gallery-demo">
+						<a href="#gal2">
+							<img src="/assets/g2.jpg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree">
+					<div class="gallery-demo">
+						<a href="#gal3">
+							<img src="/assets/g3.jpg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree mt-md-0 mt-4">
+					<div class="gallery-demo">
+						<a href="#gal4">
+							<img src="/assets/g4.jpg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div> -->
+			</div>
+		<!-- 	<div class="row mt-4">
+				<div class="col-md-3 gal-grid-wthree">
+					<div class="gallery-demo">
+						<a href="#gal5">
+							<img src="/assets/g5.jpg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree my-md-0 my-4">
+					<div class="gallery-demo">
+						<a href="#gal6">
+							<img src="/assets/g6.jpg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree">
+					<div class="gallery-demo">
+						<a href="#gal7">
+							<img src="/assets/g7.jpg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree mt-md-0 mt-4">
+					<div class="gallery-demo">
+						<a href="#gal8">
+							<img src="/assets/g8.jpg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</section>
+	<!-- gallery model-->
+	<%= render 'layouts/footer' %>
