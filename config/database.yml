@@ -6,3 +6,12 @@ development:
   username: root
   password: root
   host: localhost
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: plant
+  pool: 5
+  username: root
+  password: root
+  host: localhost
