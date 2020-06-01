@@ -1,0 +1,21 @@
+<!-- <script src="https://js.stripe.com/v2/"></script> -->
+<%= form_tag checkout_payment_plant_path, method: :post do %>
+  
+  Grand Total : <%= @plant.price %> $
+  <%#= hidden_field_tag :stripe_plan_id, @plan.stripe_plan_id %>
+  <!-- <script class="stripe-button" 
+             data-amount="<%#= @plant.price %>" 
+             data-currency="usd" 
+             data-email="<%#= current_user.email %>" 
+             data-key="<%#= "pk_test_YC94Pic1v7jCyzBhi0PX8rLw00cNFJAq3s" %>" 
+             src="https://checkout.stripe.com/checkout.js">
+  </script> -->
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+      data-email="<%= current_user.email %>"
+      data-description="A month's subscription"
+      data-amount="<%= @plant.price %>"
+      data-name="Ankit"
+      data-locale="auto">
+</script>
+<% end %>
